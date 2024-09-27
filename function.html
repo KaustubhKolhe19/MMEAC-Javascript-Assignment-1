@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Function</title>
+</head>
+<body>
+    <h2 id="fun1" style="text-align: center;">Function:</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <hr>
+    <h2 id="fun" style="text-align: center;">Anonymous Function:</h2>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <script>
+        document.getElementById("fun").style.backgroundColor = "yellow";
+        document.getElementById("fun1").style.backgroundColor = "yellow";
+     function add(a,b){
+        return a + b;
+     }
+        var result =add (10,5);
+        document.getElementById("demo").innerHTML = "Addition of two numbers using function : "  +result+"";
+
+    function sub(x,y){
+        return x - y;
+    }
+    var result1 = sub (50,30);
+    document.getElementById("demo1").innerHTML = "Subtraction of two numbers using function : "  +result1+"";
+    
+    function multi(p,q){
+        return p*q;
+     }
+     var result2 = multi(5,5);
+     document.getElementById("demo2").innerHTML = "Multiplication of two numbers using function : "  +result2+"";
+
+    function div(num1,num2){
+        return num1/num2;
+    }
+    var result3 = div(50,5);
+    document.getElementById("demo3").innerHTML = "Division of two numbers using function : "  +result3+"";
+
+    function exp(num1,num2){
+        return num1**num2;
+    }
+    var result4 = exp(3,3);
+    document.getElementById("demo4").innerHTML = "Exp of two numbers using function : "  +result4+"";
+
+   //Anonymous Function
+   let addfunc = function(a,b){
+    return a+b;
+   }
+   document.getElementById("demo5").innerHTML = "Addition using Anonymous Function : "+ addfunc(5,5)+ "";
+
+   let subfunc = function(a,b){
+    return a-b;
+   }
+   document.getElementById("demo6").innerHTML = "Subtraction using Anonymous Function : "+ subfunc(10,5)+ "";
+
+   let multifunc = function(a,b){
+    return a+b;
+   }
+   document.getElementById("demo7").innerHTML = "Multiplication using Anonymous Function : "+ multifunc(5,5)+ "";
+
+   let divfunc = function(a,b){
+    return a/b;
+   }
+   document.getElementById("demo8").innerHTML = "Division using Anonymous Function : "+ divfunc(5,5)+ "";
+
+   let expfunc = function(a,b){
+    return a**b;
+   }
+   document.getElementById("demo9").innerHTML = "Exp using Anonymous Function : "+ expfunc(5,5)+ "";
+
+    </script>
+</body>
+</html>

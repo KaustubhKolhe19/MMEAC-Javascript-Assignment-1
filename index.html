@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 id="demo1">JavaScript</h1> <hr>
+    Current Date & Time is:<p id="demo2"></p> <hr>
+    <button onclick="alert('hello Everyone')">Click Me</button> <hr>
+    <p id="demo"></p>
+    <p id="aa"></p>
+    <p id="bb"></p>
+    <p id="cc"></p> <hr>
+    <p id="dd"></p> 
+    <p id="ee"></p>
+    <p id="ff"></p>
+    <hr>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        console.log("hello");
+        document.getElementById("demo1").style.color = "red";
+        document.getElementById("demo2").innerHTML = Date();
+       //Addition Of Two Numbers
+       x=10;
+       y=20;
+       z= x+y;
+       document.getElementById("demo").innerHTML= "Addition of 10 & 20 is : "+z+" ";
+       //Substraction Of Two Number
+       x=10;
+       y=5;
+       z= x-y;
+       document.getElementById("aa").innerHTML= "Substraction of 10 & 5 is : "+z+" ";
+       //Multiplication  Of Two Number
+       x=10;
+       y=5;
+       z= x*y;
+       document.getElementById("bb").innerHTML= "Multiplication of 10 & 5 is : "+z+" ";
+      //Division  Of Two Number
+       x=10;
+       y=5;
+       z= x/y;
+       document.getElementById("cc").innerHTML= "Division of 10 & 5 is : "+z+" ";
+      //let var const
+       var x = 10;
+       var y = 20;
+       var z = x + y;
+       document.getElementById("dd").innerHTML = "Using var keyword: " +z+"";
+
+       let a,b,c;   
+       a=5;
+       b=80;
+       c=a*b;
+       document.getElementById("ee").innerHTML = "Using Let keyword: " +c+"";
+
+       const p1=50;
+       const p2=20;
+       total = p1+p2;
+       document.getElementById("ff").innerHTML = "Using Const Keyword:"+total+"";
+
+       //Comparision Oprators
+       let text1 = "A";
+       let text2 = "B";
+       let result = text1 < text2;
+       document.getElementById("demo5").innerHTML = "Is A less than B? " + result;
+    //second
+    let t1 = "A";
+    let t2 = "B";
+    let result1 = text1 > text2;
+    document.getElementById("demo6").innerHTML = "Is A less than B? " + result1;
+    
+    </script>
+</body>
+</html>

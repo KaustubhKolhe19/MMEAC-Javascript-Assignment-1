@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction of JavaScript</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body onload="changeBackgroundColor()">
+
+    <div id="jsIntro">
+        <h1>JavaScript Introduction</h1>
+        <p>
+        JavaScript is a versatile, high-level programming language primarily used in web development to create interactive and 
+        dynamic websites. While HTML provides the structure of web pages and CSS handles the design and layout, JavaScript brings
+        life to a website by allowing developers to create features that respond to user interactions, like dropdown menus, pop-up
+        notifications, sliders, and form validation. JavaScript works in tandem with HTML and CSS, making it a key part of the triad
+        that builds modern web applications.
+        </p>
+
+        <p>
+        The importance of JavaScript in web development cannot be overstated. With JavaScript, websites become more than just static pages.
+        It enables the creation of responsive and interactive elements that significantly enhance user experience. For instance, using 
+        JavaScript, developers can load new data without refreshing the page, a concept known as asynchronous programming or AJAX. JavaScript
+        also plays a significant role in creating web applications and games, making it one of the most popular languages today.
+        </p>
+
+        <p>
+        JavaScript differs from other programming languages like Python, Java, or C++ in several ways. Firstly, JavaScript is 
+        primarily client-side, meaning it runs directly in the user's browser, while other languages often require server-side 
+        execution. Additionally, JavaScript is event-driven, meaning it can respond to specific user actions like clicks or keypresses
+        in real-time. In contrast, many traditional programming languages are often used for system-level tasks, application
+        development, or data processing. The simplicity and ubiquity of JavaScript, alongside its ability to run in any web browser
+        without additional plugins, makes it a foundational language for web development.
+        </p>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+    </div>
+    <script>
+    function changeBackgroundColor() {
+    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    document.getElementById('jsIntro').style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
